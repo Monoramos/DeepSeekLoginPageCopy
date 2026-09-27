@@ -1,0 +1,130 @@
+:root{
+    --container-width: 336px;
+}
+
+* {
+  margin: 0;
+  background-color: #fff;
+  font-family: "quote-cjk-patch", "Inter", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: #81858c;
+}
+
+.ds-auth-form-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  width: var(--container-width);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ds-auth-input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f9fafb;
+  background-color: rgb(249, 250, 251);
+  box-shadow: none;
+  border-radius: 28px;
+  padding: 10px 20px 10px 16px;
+  align-self: stretch;
+  width: 300px;
+}
+
+.ds-form-item__content, .ds-form-item__content a{
+    font-size: 12px;
+}
+
+.ds-form-item__content a {
+    color: #0F1115;
+    text-underline-position: from-font;
+    text-decoration: underline;
+}
+
+.ds-auth-form__footer{
+    display: flex;
+    width: var(--container-width);
+    justify-content:space-between;
+    align-items: center;
+}
+
+p{
+    color: #3964FE;
+    font-size: 12px;
+
+}
+
+.ds-button{
+    background-color: #3964FE;
+    color: white;
+    width: var(--container-width);
+    border-radius: 100px;
+    height: 42px;
+    line-height: 22px;
+    border: none;
+}
+
+.ds-sign-in-form__icon svg path {
+    fill: #3964FE;
+    margin-bottom: -8px;
+}
+
+.ds-password-field {
+    position: relative;
+}
+
+.ds-eye-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.ds-oauth-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.ds-oauth-link {
+    color: #81858c;
+    font-size: 12px;
+    text-decoration: underline;
+    text-underline-position: from-font;
+}
+
+.ds-oauth-divider {
+    color: #81858c;
+    font-size: 12px;
+}
+
+.ds-page-footer {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 10px;
+    color: #81858c;
+}
+
+.ds-page-footer a {
+    color: #81858c;
+    text-decoration: none;
+}
